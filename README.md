@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-The configuration files within my home directory
+These are the configuration files within my home directory.

@@ -1,0 +1,15 @@
+# I deprecated screen in favor of tmux wherever I could but on some hosts only screen is installed.
+
+startup_message off
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+escape ^ff
+bind j prev
+bind u number -1
+bind k title
+bind l next
+bind , kill
+bind i screen
+bind h detach
+altscreen on
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+defnonblock 5

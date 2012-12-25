@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# This executable is meant to be placed into ~/bin if the "not a terminal" error message
+# gets displayed by scp because of the automatic tmux startup code in .bashrc.
+
+unset LC_TMUX_SESSION_NAME
+exec /usr/bin/scp $*
